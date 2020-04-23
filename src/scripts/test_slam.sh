@@ -5,6 +5,6 @@ xterm -e " source /home/workspace/udacity_robotics_project5/devel/setup.bash; ro
 sleep 10
 xterm -e " source /home/workspace/udacity_robotics_project5/devel/setup.bash; roslaunch turtlebot_teleop keyboard_teleop.launch " &
 sleep 5
-xterm -e " source /home/workspace/udacity_robotics_project5/devel/setup.bash; rosrun gmapping slam_gmapping" &
-sleep 5
-xterm -e " source /home/workspace/udacity_robotics_project5/devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation.launch "
+xterm -e " source /home/workspace/udacity_robotics_project5/devel/setup.bash; roslaunch turtlebot_rviz_launchers view_navigation.launch " &
+sleep 10
+xterm -e " source /home/workspace/udacity_robotics_project5/devel/setup.bash; rosrun gmapping slam_gmapping"
